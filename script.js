@@ -15,7 +15,8 @@ function return_normal() {
 }
 
 // Get the link element by its ID and add event listeners
-// const link = document.getElementById('highlight-link');
+const link = document.getElementsByTagName('a');
+// const link = document.getElementByTagNmame('a');
 link.addEventListener('mouseover', highlight);
 link.addEventListener('mouseout', return_normal);
 
