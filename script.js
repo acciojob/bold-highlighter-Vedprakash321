@@ -5,13 +5,9 @@ function highlight() {
     });
 }
 
-function return_normal() {
+function returnNormal() {
     const boldWords = document.querySelectorAll('strong');
     boldWords.forEach(word => {
         word.style.color = 'black';
     });
 }
-
-const link = document.getElementById('highlight-link');
-link.addEventListener('mouseover', highlight);
-link.addEventListener('mouseout', return_normal);
