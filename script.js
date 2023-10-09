@@ -1,22 +1,17 @@
-// Function to highlight bold words in the paragraph
 function highlight() {
-    const boldElements = document.querySelectorAll('strong');
-    boldElements.forEach(element => {
-        element.style.color = 'green';
+    const boldWords = document.querySelectorAll('strong');
+    boldWords.forEach(word => {
+        word.style.color = 'green';
     });
 }
 
-// Function to revert the color of bold words back to black
 function return_normal() {
-    const boldElements = document.querySelectorAll('strong');
-    boldElements.forEach(element => {
-        element.style.color = 'black';
+    const boldWords = document.querySelectorAll('strong');
+    boldWords.forEach(word => {
+        word.style.color = 'black';
     });
 }
 
-// Get the link element by its ID and add event listeners
-const link = document.getElementsByTagName('a');
-// const link = document.getElementByTagNmame('a');
+const link = document.getElementById('highlight-link');
 link.addEventListener('mouseover', highlight);
 link.addEventListener('mouseout', return_normal);
-
